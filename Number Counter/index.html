@@ -1,0 +1,28 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style type="text/css">
+    span {
+        font-size: 20px;
+        color: black;
+        font-weight: 600;
+        padding: 10px;
+        background: red;
+    }
+</style>
+</head>
+<body>
+<div style="padding:500px;"><h3>Scroll</h3></div>
+    <span class="counter">1,23,456</span>
+	<span class="counter">10</span>
+	<span class="counter">5000</span>
+	<script src="waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+	<script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
